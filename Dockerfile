@@ -7,4 +7,4 @@ COPY package*.json /app/
 RUN npm i
 COPY . /app/
 # Github ActionsだとGithub ActionsサーバのworkspaceをDocker上のWORKDIRにマウントするため、WORKDIR上で作業した形跡が消えてしまうので、実行時に再度npm installを行っている
-CMD ["npm", "i", "&&", "npx", "ng", "test", "--no-watch", "--browsers=ChromeHeadlessCI"]
+CMD npm i && npx ng test --no-watch --browsers=ChromeHeadlessCI
