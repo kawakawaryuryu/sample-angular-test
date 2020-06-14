@@ -6,4 +6,5 @@ WORKDIR /app
 COPY package*.json /app/
 RUN npm i
 COPY . /app/
-CMD ["npx", "ng", "test", "--no-watch", "--browsers=ChromeHeadlessCI"]
+#CMD ["npx", "ng", "test", "--no-watch", "--browsers=ChromeHeadlessCI"]
+CMD ["ls", "-la"]
