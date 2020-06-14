@@ -26,3 +26,6 @@ jobs:
     - name: run angular test
       uses: ./
 
+    - name: Setup tmate session
+      uses: mxschmitt/action-tmate@v2
+
