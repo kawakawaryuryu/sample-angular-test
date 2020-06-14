@@ -1,0 +1,5 @@
+name: Sample Angular Test on Docker
+description: execute angular test on docker container
+runs:
+  using: docker
+  image: Dockerfile
